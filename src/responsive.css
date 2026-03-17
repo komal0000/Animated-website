@@ -1,0 +1,120 @@
+/* ─────────────────────────────────────────────────────────────────
+   Responsive Layout Classes – Mobile-first media query overrides
+   ───────────────────────────────────────────────────────────────── */
+
+/* ── Navigation ───────────────────────────────────────────────── */
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+/* ── Section: Elevate Your Perspective ────────────────────────── */
+.elevate-section {
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .elevate-section {
+    flex-direction: column;
+    padding: 4rem 1.5rem !important;
+    gap: 2rem !important;
+  }
+  .elevate-section .elevate-text {
+    text-align: center;
+    max-width: 100% !important;
+  }
+  .elevate-section .elevate-card {
+    max-width: 100% !important;
+    min-height: 180px !important;
+  }
+}
+
+/* ── Section: Philosophy Grid ─────────────────────────────────── */
+.philosophy-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 640px) {
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .philosophy-section {
+    padding: 4rem 1.5rem !important;
+  }
+  .philosophy-panel {
+    padding: 2rem !important;
+    border-radius: 1.5rem !important;
+  }
+}
+
+/* ── Section: Immerse Cards Grid ──────────────────────────────── */
+.immerse-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .immerse-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .immerse-grid {
+    grid-template-columns: 1fr;
+  }
+  .immerse-section {
+    padding: 4rem 1.5rem !important;
+  }
+}
+
+/* ── Section: Connect / Join the Collective ───────────────────── */
+.connect-section {
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .connect-section {
+    flex-direction: column;
+    padding: 4rem 1.5rem !important;
+    gap: 2.5rem !important;
+  }
+  .connect-artwork {
+    max-width: 100% !important;
+    min-height: 200px !important;
+    width: 100%;
+  }
+  .connect-form {
+    max-width: 100% !important;
+  }
+  .connect-form h2 {
+    text-align: center;
+  }
+}
+
+/* ── Section: Hero & Ascent (Full-page text sections) ─────────── */
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 90px 1.5rem 3rem !important;
+  }
+}
+
+/* ── Footer ────────────────────────────────────────────────────── */
+.page-footer {
+  flex-direction: row;
+}
+
+@media (max-width: 560px) {
+  .page-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 1.5rem !important;
+  }
+}
