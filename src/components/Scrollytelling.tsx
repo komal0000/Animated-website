@@ -111,7 +111,7 @@ export const Scrollytelling: React.FC = () => {
           Defying Gravity
         </p>
         <div style={{ width: 280, height: 2, background: 'rgba(255,255,255,0.1)', borderRadius: 4, overflow: 'hidden' }}>
-          <div style={{ height: '100%', width: `${pct}%`, background: '#FF7F50', borderRadius: 4, boxShadow: '0 0 12px #FF7F50', transition: 'width 0.1s linear' }} />
+          <div style={{ height: '100%', width: `${pct}%`, background: '#D89F9C', borderRadius: 4, boxShadow: '0 0 12px #D89F9C', transition: 'width 0.1s linear' }} />
         </div>
         <p style={{ fontFamily: 'Outfit, sans-serif', fontSize: '0.7rem', letterSpacing: '0.2em', color: 'rgba(255,255,255,0.3)', textTransform: 'uppercase', marginTop: '1rem' }}>
           {Math.floor(pct)}%
@@ -132,7 +132,7 @@ export const Scrollytelling: React.FC = () => {
       </div>
 
       {/* Fixed Nav */}
-      <nav style={{
+      <nav className="main-nav" style={{
         position: 'fixed', top: 0, left: 0, width: '100%', zIndex: 100,
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',
         padding: '1.2rem 2.5rem',
@@ -163,7 +163,7 @@ export const Scrollytelling: React.FC = () => {
         <section className="hero-section" style={{ minHeight: '110vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '120px 2rem 4rem' }}>
           <div ref={addReveal(0)} style={{ textAlign: 'center', maxWidth: 700, width: '100%' }}>
             <h1 style={{ fontFamily: 'Outfit, sans-serif', fontSize: 'clamp(3rem, 10vw, 7rem)', fontWeight: 800, lineHeight: 0.95, marginBottom: '1.5rem', letterSpacing: '-0.03em' }}>
-              Embrace<br /><span style={{ color: '#FF7F50' }}>Stillness</span>
+              Embrace<br /><span style={{ color: '#D89F9C' }}>Stillness</span>
             </h1>
             <p style={{ fontSize: 'clamp(0.95rem, 2.5vw, 1.2rem)', opacity: 0.75, lineHeight: 1.7, fontWeight: 300, maxWidth: 480, margin: '0 auto' }}>
               In a world of constant motion, true luxury is found in moments of pause. Discover entirely new states of tranquility.
@@ -177,15 +177,15 @@ export const Scrollytelling: React.FC = () => {
           {/* Left text — elevate-text class resets maxWidth on mobile */}
           <div ref={addReveal(1)} className="elevate-text" style={{ flex: 1, maxWidth: 480 }}>
             <h2 style={{ fontFamily: 'Outfit, sans-serif', fontSize: 'clamp(2.2rem, 6vw, 4.5rem)', fontWeight: 800, lineHeight: 1, marginBottom: '1.5rem', letterSpacing: '-0.03em' }}>
-              Elevate Your<br /><span style={{ color: '#FF7F50' }}>Perspective</span>
+              Elevate Your<br /><span style={{ color: '#D89F9C' }}>Perspective</span>
             </h2>
             <p style={{ fontSize: 'clamp(0.9rem, 2vw, 1rem)', opacity: 0.7, lineHeight: 1.8, fontWeight: 300 }}>
               Like a pagoda suspended among the clouds, lift yourself above the noise. Our aesthetic merges ancient architectural wonder with absolute cosmic minimalism.
             </p>
           </div>
           {/* Right glass card — elevate-card class resets sizing on mobile */}
-          <div className="elevate-card" style={{ flex: 1, maxWidth: 440, minHeight: 260, borderRadius: '2rem', background: 'rgba(255,255,255,0.04)', backdropFilter: 'blur(24px)', WebkitBackdropFilter: 'blur(24px)', border: '1px solid rgba(255,255,255,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <p style={{ fontSize: '0.65rem', letterSpacing: '0.3em', textTransform: 'uppercase', opacity: 0.25, fontFamily: 'Outfit, sans-serif' }}>
+          <div className="elevate-card" style={{ flex: 1, maxWidth: 440, minHeight: 260, borderRadius: '2rem', background: 'rgba(255,255,255,0.04) url(/contemplation.svg) center/cover no-repeat', backdropFilter: 'blur(24px)', WebkitBackdropFilter: 'blur(24px)', border: '1px solid rgba(255,255,255,0.08)', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', padding: '1.5rem', boxShadow: '0 20px 40px rgba(0,0,0,0.5)' }}>
+            <p style={{ fontSize: '0.65rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: '#fff', opacity: 0.8, fontFamily: 'Outfit, sans-serif', background: 'rgba(27,35,53,0.5)', padding: '0.5rem 1rem', borderRadius: '2rem', backdropFilter: 'blur(10px)' }}>
               Contemplation
             </p>
           </div>
@@ -201,7 +201,7 @@ export const Scrollytelling: React.FC = () => {
             border: '1px solid rgba(255,255,255,0.08)',
           }}>
             <h2 style={{ fontFamily: 'Outfit, sans-serif', fontSize: 'clamp(1.8rem, 5vw, 3.5rem)', fontWeight: 700, marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>
-              The Zen <span style={{ color: '#FF7F50' }}>Philosophy</span>
+              The Zen <span style={{ color: '#D89F9C' }}>Philosophy</span>
             </h2>
             <p style={{ fontSize: 'clamp(0.9rem, 1.5vw, 1.15rem)', opacity: 0.8, lineHeight: 1.8, fontWeight: 300, maxWidth: 640, margin: '0 auto 2.5rem' }}>
               We believe in the power of the void. Not as an absence, but as a space for potential. Our design language is rooted in the "Ma" concept—the space between things that gives them meaning.
@@ -209,11 +209,11 @@ export const Scrollytelling: React.FC = () => {
             {/* philosophy-grid class: 2-col desktop → 1-col mobile */}
             <div className="philosophy-grid" style={{ display: 'grid', gap: '2rem', textAlign: 'left', borderTop: '1px solid rgba(255,255,255,0.07)', paddingTop: '2rem' }}>
               <div>
-                <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.25em', textTransform: 'uppercase', color: '#FF7F50', marginBottom: '0.75rem' }}>Weightlessness</h3>
+                <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.25em', textTransform: 'uppercase', color: '#D89F9C', marginBottom: '0.75rem' }}>Weightlessness</h3>
                 <p style={{ fontSize: '0.9rem', opacity: 0.65, lineHeight: 1.7, fontWeight: 300 }}>Letting go of digital clutter to find clarity in simplicity and motion.</p>
               </div>
               <div>
-                <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.25em', textTransform: 'uppercase', color: '#FF7F50', marginBottom: '0.75rem' }}>Presence</h3>
+                <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.25em', textTransform: 'uppercase', color: '#D89F9C', marginBottom: '0.75rem' }}>Presence</h3>
                 <p style={{ fontSize: '0.9rem', opacity: 0.65, lineHeight: 1.7, fontWeight: 300 }}>Designing experiences that anchor the user in the present moment.</p>
               </div>
             </div>
@@ -224,7 +224,7 @@ export const Scrollytelling: React.FC = () => {
         <section style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '4rem 2rem', textAlign: 'center' }}>
           <div ref={addReveal(3)} style={{ maxWidth: 700, width: '100%' }}>
             <h2 style={{ fontFamily: 'Outfit, sans-serif', fontSize: 'clamp(3rem, 10vw, 7rem)', fontWeight: 800, lineHeight: 0.95, marginBottom: '1.5rem', letterSpacing: '-0.03em' }}>
-              Begin Your<br /><span style={{ color: '#FF7F50' }}>Ascent</span>
+              Begin Your<br /><span style={{ color: '#D89F9C' }}>Ascent</span>
             </h2>
             <p style={{ fontSize: 'clamp(0.9rem, 2vw, 1.1rem)', opacity: 0.7, lineHeight: 1.8, fontWeight: 300, maxWidth: 420, margin: '0 auto' }}>
               The journey upwards requires leaving the heaviness behind. Drop your anchors and float into serenity.
@@ -237,7 +237,7 @@ export const Scrollytelling: React.FC = () => {
         <section id="immerse" className="immerse-section" style={{ minHeight: '110vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '4rem 8vw' }}>
           <div ref={addReveal(4)} style={{ width: '100%', maxWidth: 1100, textAlign: 'center' }}>
             <h2 style={{ fontFamily: 'Outfit, sans-serif', fontSize: 'clamp(2.2rem, 6vw, 4.5rem)', fontWeight: 800, letterSpacing: '-0.03em', marginBottom: '3rem' }}>
-              Depth of <span style={{ color: '#FF7F50' }}>Immersion</span>
+              Depth of <span style={{ color: '#D89F9C' }}>Immersion</span>
             </h2>
             {/* immerse-grid class: 3-col → 2-col → 1-col */}
             <div className="immerse-grid" style={{ display: 'grid', gap: '1.5rem' }}>
@@ -252,7 +252,7 @@ export const Scrollytelling: React.FC = () => {
                   border: '1px solid rgba(255,255,255,0.07)', textAlign: 'left', cursor: 'pointer',
                   transition: 'border-color 0.4s, transform 0.4s',
                 }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(255,127,80,0.5)'; (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-4px)'; }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(216,159,156,0.5)'; (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-4px)'; }}
                   onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(255,255,255,0.07)'; (e.currentTarget as HTMLDivElement).style.transform = 'translateY(0)'; }}>
                   <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.2rem', fontWeight: 700, marginBottom: '0.75rem' }}>{item.title}</h3>
                   <p style={{ fontSize: '0.875rem', opacity: 0.6, lineHeight: 1.7, fontWeight: 300 }}>{item.desc}</p>
@@ -268,20 +268,20 @@ export const Scrollytelling: React.FC = () => {
           {/* Left accent card — connect-artwork class goes full-width on mobile */}
           <div className="connect-artwork" style={{
             flex: 1, maxWidth: 360, minHeight: 480, borderRadius: '2rem',
-            background: 'rgba(255,255,255,0.04)', backdropFilter: 'blur(24px)', WebkitBackdropFilter: 'blur(24px)',
+            background: 'rgba(255,255,255,0.04) url(/zenith-collective.svg) center/cover no-repeat', backdropFilter: 'blur(24px)', WebkitBackdropFilter: 'blur(24px)',
             border: '1px solid rgba(255,255,255,0.08)',
             display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end',
-            padding: '2rem', overflow: 'hidden', position: 'relative',
+            padding: '2rem', overflow: 'hidden', position: 'relative', boxShadow: '0 20px 40px rgba(0,0,0,0.5)'
           }}>
             {/* Decorative coral glow */}
-            <div style={{ position: 'absolute', bottom: -60, left: '50%', transform: 'translateX(-50%)', width: 240, height: 240, borderRadius: '50%', background: 'rgba(255,127,80,0.15)', filter: 'blur(60px)', pointerEvents: 'none' }} />
-            <span style={{ fontSize: '0.6rem', letterSpacing: '0.3em', textTransform: 'uppercase', opacity: 0.25, fontFamily: 'Outfit, sans-serif' }}>Zenith Collective</span>
+            <div style={{ position: 'absolute', bottom: -60, left: '50%', transform: 'translateX(-50%)', width: 240, height: 240, borderRadius: '50%', background: 'rgba(216,159,156,0.15)', filter: 'blur(60px)', pointerEvents: 'none' }} />
+            <span style={{ fontSize: '0.6rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: '#fff', opacity: 0.8, fontFamily: 'Outfit, sans-serif', background: 'rgba(27,35,53,0.5)', padding: '0.5rem 1rem', borderRadius: '2rem', backdropFilter: 'blur(10px)', zIndex: 1 }}>Zenith Collective</span>
           </div>
 
           {/* Right form — connect-form class goes full-width on mobile */}
           <div ref={addReveal(5)} className="connect-form" style={{ flex: 1, maxWidth: 520 }}>
             <h2 style={{ fontFamily: 'Outfit, sans-serif', fontSize: 'clamp(2rem, 4vw, 3.2rem)', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '2.5rem' }}>
-              Join the <span style={{ color: '#FF7F50' }}>Collective</span>
+              Join the <span style={{ color: '#D89F9C' }}>Collective</span>
             </h2>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -290,7 +290,7 @@ export const Scrollytelling: React.FC = () => {
                   <p style={{ fontSize: '0.6rem', letterSpacing: '0.35em', textTransform: 'uppercase', opacity: 0.4, marginBottom: '0.5rem', fontFamily: 'Outfit, sans-serif', fontWeight: 700 }}>{label}</p>
                   <input type={type} placeholder={placeholder}
                     style={{ width: '100%', background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '1rem', padding: '0.9rem 1.25rem', color: '#fff', fontSize: '0.95rem', outline: 'none', transition: 'border-color 0.3s', fontFamily: 'Inter, sans-serif' }}
-                    onFocus={e => (e.target.style.borderColor = 'rgba(255,127,80,0.6)')}
+                    onFocus={e => (e.target.style.borderColor = 'rgba(216,159,156,0.6)')}
                     onBlur={e => (e.target.style.borderColor = 'rgba(255,255,255,0.1)')} />
                 </div>
               ))}
@@ -298,13 +298,13 @@ export const Scrollytelling: React.FC = () => {
                 <p style={{ fontSize: '0.6rem', letterSpacing: '0.35em', textTransform: 'uppercase', opacity: 0.4, marginBottom: '0.5rem', fontFamily: 'Outfit, sans-serif', fontWeight: 700 }}>Transmission</p>
                 <textarea rows={4} placeholder="Your Message..."
                   style={{ width: '100%', background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '1rem', padding: '0.9rem 1.25rem', color: '#fff', fontSize: '0.95rem', outline: 'none', resize: 'none', fontFamily: 'Inter, sans-serif', transition: 'border-color 0.3s' }}
-                  onFocus={e => (e.target.style.borderColor = 'rgba(255,127,80,0.6)')}
+                  onFocus={e => (e.target.style.borderColor = 'rgba(216,159,156,0.6)')}
                   onBlur={e => (e.target.style.borderColor = 'rgba(255,255,255,0.1)')} />
               </div>
               <button
-                style={{ width: '100%', padding: '1.1rem', background: '#fff', color: '#000', border: 'none', borderRadius: '1rem', fontFamily: 'Outfit, sans-serif', fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.4em', textTransform: 'uppercase', cursor: 'pointer', transition: 'background 0.4s, color 0.4s, box-shadow 0.4s' }}
-                onMouseEnter={e => { const el = e.currentTarget; el.style.background = '#FF7F50'; el.style.color = '#fff'; el.style.boxShadow = '0 0 30px rgba(255,127,80,0.5)'; }}
-                onMouseLeave={e => { const el = e.currentTarget; el.style.background = '#fff'; el.style.color = '#000'; el.style.boxShadow = 'none'; }}>
+                style={{ width: '100%', padding: '1.1rem', background: '#fff', color: '#1B2335', border: 'none', borderRadius: '1rem', fontFamily: 'Outfit, sans-serif', fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.4em', textTransform: 'uppercase', cursor: 'pointer', transition: 'background 0.4s, color 0.4s, box-shadow 0.4s' }}
+                onMouseEnter={e => { const el = e.currentTarget; el.style.background = '#D89F9C'; el.style.color = '#fff'; el.style.boxShadow = '0 0 30px rgba(216,159,156,0.5)'; }}
+                onMouseLeave={e => { const el = e.currentTarget; el.style.background = '#fff'; el.style.color = '#1B2335'; el.style.boxShadow = 'none'; }}>
                 Transmit
               </button>
             </div>
@@ -318,10 +318,17 @@ export const Scrollytelling: React.FC = () => {
           letterSpacing: '0.3em', textTransform: 'uppercase', opacity: 0.4, fontFamily: 'Outfit, sans-serif', fontWeight: 700,
         }}>
           <span>© 2026 Zenith Collection</span>
-          <span style={{ color: '#FF7F50' }}>V.2.0-FINAL</span>
+          <span style={{ color: '#D89F9C' }}>V.2.0-FINAL</span>
         </footer>
 
       </div>
     </div>
   );
 };
+
+
+
+
+
+
+

@@ -2,13 +2,27 @@
    Responsive Layout Classes – Mobile-first media query overrides
    ───────────────────────────────────────────────────────────────── */
 
+/* ── Global Tweaks ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  h1, h2 {
+    line-height: 1.1 !important;
+  }
+}
+
 /* ── Navigation ───────────────────────────────────────────────── */
+.main-nav {
+  padding: 1.2rem 2.5rem !important;
+}
+
 .nav-links {
   display: flex;
   gap: 2.5rem;
 }
 
 @media (max-width: 768px) {
+  .main-nav {
+    padding: 1rem 1.5rem !important;
+  }
   .nav-links {
     display: none;
   }
@@ -22,16 +36,20 @@
 @media (max-width: 768px) {
   .elevate-section {
     flex-direction: column;
-    padding: 4rem 1.5rem !important;
-    gap: 2rem !important;
+    padding: 6rem 1.5rem !important;
+    gap: 2.5rem !important;
+    text-align: center !important;
   }
   .elevate-section .elevate-text {
     text-align: center;
     max-width: 100% !important;
+    margin: 0 auto;
   }
-  .elevate-section .elevate-card {
+  .elevate-card {
+    min-height: 240px !important;
     max-width: 100% !important;
-    min-height: 180px !important;
+    width: 100% !important;
+    background-position: center !important;
   }
 }
 
@@ -43,14 +61,20 @@
 @media (max-width: 640px) {
   .philosophy-grid {
     grid-template-columns: 1fr;
-    text-align: center;
+    text-align: center !important;
   }
   .philosophy-section {
-    padding: 4rem 1.5rem !important;
+    padding: 6rem 1.5rem !important;
   }
   .philosophy-panel {
-    padding: 2rem !important;
+    padding: 2.5rem 1.5rem !important;
     border-radius: 1.5rem !important;
+  }
+  .philosophy-panel p {
+    text-align: center !important;
+  }
+  .philosophy-grid h3 {
+    text-align: center !important;
   }
 }
 
@@ -70,7 +94,10 @@
     grid-template-columns: 1fr;
   }
   .immerse-section {
-    padding: 4rem 1.5rem !important;
+    padding: 6rem 1.5rem !important;
+  }
+  .immerse-grid > div {
+    text-align: center !important;
   }
 }
 
@@ -82,13 +109,14 @@
 @media (max-width: 768px) {
   .connect-section {
     flex-direction: column;
-    padding: 4rem 1.5rem !important;
-    gap: 2.5rem !important;
+    padding: 6rem 1.5rem !important;
+    gap: 3rem !important;
   }
   .connect-artwork {
     max-width: 100% !important;
-    min-height: 200px !important;
+    min-height: 280px !important;
     width: 100%;
+    margin-bottom: -1rem;
   }
   .connect-form {
     max-width: 100% !important;
@@ -96,12 +124,15 @@
   .connect-form h2 {
     text-align: center;
   }
+  .connect-form button {
+    width: 100% !important;
+  }
 }
 
 /* ── Section: Hero & Ascent (Full-page text sections) ─────────── */
 @media (max-width: 480px) {
   .hero-section {
-    padding: 90px 1.5rem 3rem !important;
+    padding: 100px 1.5rem 4rem !important;
   }
 }
 
@@ -113,8 +144,8 @@
 @media (max-width: 560px) {
   .page-footer {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
     text-align: center;
-    padding: 1.5rem !important;
+    padding: 2rem 1.5rem !important;
   }
 }

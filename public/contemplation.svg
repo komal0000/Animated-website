@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+    <rect width="800" height="500" fill="transparent"/>
+    
+    <!-- Ethereal Navy/Peach Glows matching background -->
+    <defs>
+        <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#EA9A7E" stop-opacity="0.30"/>
+            <stop offset="50%" stop-color="#98759A" stop-opacity="0.08"/>
+            <stop offset="100%" stop-color="#1B2335" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="horizonGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#676CA3" stop-opacity="0.0"/>
+            <stop offset="50%" stop-color="#D89F9C" stop-opacity="0.15"/>
+            <stop offset="100%" stop-color="#1B2335" stop-opacity="0.0"/>
+        </linearGradient>
+    </defs>
+    
+    <!-- Glows & Horizon -->
+    <circle cx="400" cy="200" r="250" fill="url(#sunGlow)" />
+    <circle cx="400" cy="200" r="70" fill="#EA9A7E" opacity="0.6" filter="drop-shadow(0 0 15px rgba(234,154,126,0.5))" />
+    <rect x="0" y="240" width="800" height="20" fill="url(#horizonGlow)" />
+    
+    <!-- Water base / Depth fade matching the frame colors -->
+    <rect x="0" y="250" width="800" height="250" fill="#1B2335" opacity="0.5"/>
+    
+    <!-- Pure Geometry: Zen Waves / Topography -->
+    <g stroke="#ffffff" stroke-width="0.5" opacity="0.15">
+        <line x1="0" y1="260" x2="800" y2="260" opacity="0.9"/>
+        <line x1="0" y1="280" x2="800" y2="280" stroke-width="0.7" opacity="0.7"/>
+        <line x1="0" y1="310" x2="800" y2="310" stroke-width="1" opacity="0.5"/>
+        <line x1="0" y1="350" x2="800" y2="350" stroke-width="1.5" opacity="0.3"/>
+        <line x1="0" y1="400" x2="800" y2="400" stroke-width="2" opacity="0.2"/>
+        <line x1="0" y1="460" x2="800" y2="460" stroke-width="3" opacity="0.1"/>
+    </g>
+    
+    <!-- Cosmic Minimalist Pagoda Frame -->
+    <g stroke="#ffffff" stroke-width="1" opacity="0.7">
+        <!-- Main Architectural Form -->
+        <path d="M 280 250 L 280 130 L 230 130 L 400 40 L 570 130 L 520 130 L 520 250" stroke-linejoin="bevel"/>
+        <!-- Inner Support Pillars -->
+        <line x1="320" y1="250" x2="320" y2="151" stroke-width="0.5"/>
+        <line x1="480" y1="250" x2="480" y2="151" stroke-width="0.5"/>
+        <line x1="360" y1="250" x2="360" y2="172" stroke-width="0.5"/>
+        <line x1="440" y1="250" x2="440" y2="172" stroke-width="0.5"/>
+        <!-- Horizontal Beams -->
+        <line x1="280" y1="190" x2="520" y2="190" />
+        <line x1="300" y1="120" x2="500" y2="120" stroke-width="1.5"/>
+        <line x1="330" y1="90"  x2="470" y2="90" />
+        <!-- Spire -->
+        <line x1="400" y1="40" x2="400" y2="15" />
+        <circle cx="400" cy="15" r="4" fill="#1B2335" stroke="#fff" stroke-width="1"/>
+        <!-- Emitting Beacon -->
+        <circle cx="400" cy="-5" r="2" fill="#D89F9C" stroke="none" filter="drop-shadow(0 0 5px #D89F9C)"/>
+    </g>
+    
+    <!-- Pagoda Reflection (Upside down, reduced opacity, warped) -->
+    <g stroke="#ffffff" stroke-width="1" opacity="0.1" transform="scale(1, -1) translate(0, -500)">
+        <path d="M 280 250 L 280 130 L 230 130 L 400 40 L 570 130 L 520 130 L 520 250" stroke-linejoin="bevel"/>
+        <line x1="320" y1="250" x2="320" y2="151" stroke-width="0.5"/>
+        <line x1="480" y1="250" x2="480" y2="151" stroke-width="0.5"/>
+        <line x1="360" y1="250" x2="360" y2="172" stroke-width="0.5"/>
+        <line x1="440" y1="250" x2="440" y2="172" stroke-width="0.5"/>
+        <line x1="280" y1="190" x2="520" y2="190" />
+        <line x1="300" y1="120" x2="500" y2="120" stroke-width="1.5"/>
+        <line x1="330" y1="90"  x2="470" y2="90" />
+        <line x1="400" y1="40" x2="400" y2="15" />
+        <circle cx="400" cy="15" r="4" fill="#1B2335" stroke="#fff" stroke-width="1"/>
+    </g>
+
+    <!-- Cosmic Dust / Ambient Space -->
+    <circle cx="150" cy="80"  r="1.5" fill="#fff" opacity="0.4"/>
+    <circle cx="680" cy="140" r="1"   fill="#fff" opacity="0.2"/>
+    <circle cx="650" cy="50"  r="2"   fill="#98759A" opacity="0.6"/>
+    <circle cx="120" cy="220" r="1"   fill="#676CA3" opacity="0.5"/>
+</svg>

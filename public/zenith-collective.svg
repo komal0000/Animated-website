@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 800" fill="none">
+    <rect width="500" height="800" fill="transparent"/>
+    
+    <defs>
+        <radialGradient id="portalGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#98759A" stop-opacity="0.4"/>
+            <stop offset="70%" stop-color="#676CA3" stop-opacity="0.1"/>
+            <stop offset="100%" stop-color="#1B2335" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="blurGlow">
+            <stop offset="0%" stop-color="#D89F9C" stop-opacity="0.8"/>
+            <stop offset="100%" stop-color="#1B2335" stop-opacity="0"/>
+        </radialGradient>
+    </defs>
+
+    <rect x="0" y="0" width="500" height="800" fill="url(#portalGlow)"/>
+    
+    <!-- The Cosmic Monolith / Hourglass Crystal -->
+    <g stroke="rgba(255,255,255,0.15)" stroke-width="1.5" opacity="0.9">
+        <!-- Front faces -->
+        <polygon points="250,150 350,400 250,650 150,400" fill="rgba(152,117,154,0.1)" />
+        <line x1="250" y1="150" x2="250" y2="650" stroke="#D89F9C" stroke-width="2" />
+        <line x1="150" y1="400" x2="350" y2="400" />
+        
+        <!-- Back faces / Inner Geometry -->
+        <polygon points="250,150 300,400 250,650 200,400" stroke-width="0.5" stroke="rgba(255,255,255,0.3)"/>
+        <polygon points="250,220 310,400 250,580 190,400" stroke-width="0.5" stroke="rgba(255,255,255,0.1)"/>
+    </g>
+    
+    <!-- Orbital Rings -->
+    <ellipse cx="250" cy="400" rx="180" ry="40" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+    <ellipse cx="250" cy="400" rx="220" ry="20" stroke="rgba(216,159,156,0.5)" stroke-width="1" stroke-dasharray="5 10"/>
+    
+    <!-- Energy Core -->
+    <circle cx="250" cy="400" r="15" fill="#D89F9C" opacity="0.9" />
+    <circle cx="250" cy="400" r="4" fill="#fff" />
+    
+    <!-- Transmission Beams -->
+    <g stroke="#ffffff" stroke-width="0.5" opacity="0.2" stroke-dasharray="2 6">
+        <line x1="250" y1="0" x2="250" y2="150" />
+        <line x1="250" y1="650" x2="250" y2="800" />
+    </g>
+    
+    <!-- Constellation dots -->
+    <circle cx="250" cy="150" r="4" fill="#fff"/>
+    <circle cx="250" cy="650" r="4" fill="#fff"/>
+    <circle cx="350" cy="400" r="3" fill="#fff" opacity="0.5"/>
+    <circle cx="150" cy="400" r="3" fill="#fff" opacity="0.5"/>
+</svg>
